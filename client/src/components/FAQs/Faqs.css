@@ -1,5 +1,4 @@
-.faqs-head,
-.faqs-des {
+.faqs-head, .faqs-des {
     text-align: center;
 }
 
@@ -9,7 +8,7 @@
 }
 
 .questions-list {
-    padding: 0 20px; /* Adjust padding for smaller screens */
+    padding: 0 150px;
     margin-top: 25px;
 }
 
@@ -65,23 +64,7 @@ summary {
     position: absolute;
     height: 300px;
     width: 300px;
-    left: 50%; /* Center the element horizontally */
+    left: 300px;
     top: 300px;
-    transform: translateX(-50%); /* Center the element horizontally */
     z-index: -1;
 }
-
-/* Media query for smaller screens */
-@media screen and (max-width: 600px) {
-    .questions-list {
-        padding: 0 10px; /* Adjust padding for smaller screens */
-    }
-
-    .faq-mist-1 {
-        left: 50%;
-        top: 100px;
-        transform: translateX(-50%);
-    }
-}
-
-

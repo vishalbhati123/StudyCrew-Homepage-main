@@ -1,4 +1,5 @@
 .bg {
+	/* margin-top: 50px; */
 	background: url("../../assets/arrow_bg.png") top/cover;
 	background-size: 100% 100%;
 	margin-bottom: 50px;
@@ -8,11 +9,12 @@
 	min-height: 1000px;
 	text-align: center;
 	width: 100%;
-	margin-block: 50px;
-	margin-top: 50px;
+	margin-block: 100px;
+	margin-top: 100px;
 }
 
-.text-component h5, h2 {
+.text-component h5,
+h2 {
 	margin: 0;
 	padding: 0;
 }
@@ -24,11 +26,8 @@
 }
 
 h5 {
-	font-size: 18px;
-	margin: 10px;
-}
-.p {
-	text-align: center;
+	font-size: 22px;
+	margin: 15px;
 }
 
 .heading span {
@@ -38,33 +37,33 @@ h5 {
 .head-title {
 	width: 100%;
 	text-align: center;
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 }
 
 .team-cards {
 	display: flex;
-	overflow-x: auto; 
+	overflow-x: hidden; 
 	align-items: center;
-	gap: 15px;
+	gap: 30px;
 }
 
 .team-cards img {
 	width: 100%;
-	max-width: 80px;
+	max-width: 110px;
 }
 
 .team-card {
-	flex: 0 0 auto;
+	flex: 0 0 auto; /* Adjust this to control the card width */
 	padding: 10px;
-	padding-block: 30px;
+	padding-block: 50px;
 	margin: 10px;
 	display: grid;
 	place-items: center;
-	min-width: 220px;
-	border-radius: 15px;
+	min-width: 280px;
+	border-radius: 20px;
 	background: rgba(255, 255, 255, 0.7);
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-	backdrop-filter: blur(15px);
+	backdrop-filter: blur(25px);
 }
 
 .team-card img, .team-card h5, .team-card p {
@@ -72,23 +71,23 @@ h5 {
 }
 
 .join-team-section {
-	width: 100%;
+	width: 100vw;
 	border-top: 2px solid #F2F7FF;
 	border-bottom: 2px solid #F2F7FF;
-	padding: 15px 0px;
+	padding: 25px 0px;
 }
 
 .join-team-section p {
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 }
 
 .join-team-button {
 	position: relative;
-	top: 50px;
+	top: 1500px;
 }
 
 .team-cards::-webkit-scrollbar {
-    height: 5px;
+    height: 10px;
 }
 
 .team-cards::-webkit-scrollbar-thumb {
@@ -98,43 +97,4 @@ h5 {
 
 .team-cards::-webkit-scrollbar-thumb:hover {
     background: #555; 
-}
-
-/* Media queries for responsiveness */
-@media screen and (max-width: 768px) {
-    .team-component {
-        margin-block: 30px;
-        margin-top: 30px;
-    }
-
-    h5 {
-        font-size: 16px;
-        margin: 8px;
-    }
-
-    h2 {
-        font-size: 28px;
-        margin-bottom: 15px;
-    }
-
-    p {
-        font-size: 14px;
-    }
-
-    .head-title {
-        margin-bottom: 20px;
-    }
-
-    .team-card {
-        min-width: 180px;
-        padding-block: 20px;
-    }
-
-    .team-card img {
-        max-width: 60px;
-    }
-
-    .join-team-button {
-        top: 30px;
-    }
 }
