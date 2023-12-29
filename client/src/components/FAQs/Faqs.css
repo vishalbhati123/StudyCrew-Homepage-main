@@ -1,4 +1,5 @@
-.faqs-head, .faqs-des {
+.faqs-head,
+.faqs-des {
     text-align: center;
 }
 
@@ -8,7 +9,7 @@
 }
 
 .questions-list {
-    padding: 0 150px;
+    padding: 0 150px; /* Adjust padding for smaller screens */
     margin-top: 25px;
 }
 
@@ -42,7 +43,7 @@
     text-align: left;
     list-style: none;
     max-height: 0;
-    overflow: hidden;
+    overflow-x: hidden;
     transition: max-height 0.3s ease;
     font-size: 17px;
 }
@@ -64,7 +65,64 @@ summary {
     position: absolute;
     height: 300px;
     width: 300px;
-    left: 300px;
+    left: 50%; /* Center the element horizontally */
     top: 300px;
+    transform: translateX(-50%); /* Center the element horizontally */
     z-index: -1;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    .questions-list {
+        padding: 0 20px;
+    }
+
+    .faq-mist-1 {
+        left: 50%;
+        top: 100px;
+        transform: translateX(-50%);
+    }
+    .faqs-heading {
+        font-size: 33px;
+    }
+    .faqs-des {
+        font-size: 17px;
+        text-align: center;
+    }
+    .question-head {
+        font-size: 16px;
+    }
+   .question-des {
+    font-size: 14px;
+   }
+}
+@media screen and (max-width: 280px) {
+    .questions-list {
+        padding: 0 20px;
+    }
+
+    .question {
+        background-color: #EAF1FF;
+        padding: 2px;
+        border-radius: 7px;
+        box-shadow: 0 2px 1px rgba(128, 128, 128, 0.472);
+        margin-bottom: 15px;
+        transition: all 0.3s ease; /* Smooth transition for background and box-shadow */
+    }
+
+    .faqs-heading {
+        font-size: 24px; /* Adjusted font size for faqs-heading */
+    }
+
+    .faqs-des {
+        font-size: 14px; /* Adjusted font size for faqs-des */
+    }
+
+    .question-head {
+        font-size: 12px; /* Adjusted font size for question-head */
+    }
+
+    .question-des {
+        font-size: 12px; /* Adjusted font size for question-des */
+    }
 }
